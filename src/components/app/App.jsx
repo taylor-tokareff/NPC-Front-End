@@ -1,5 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Header from '../containers/Header';
 
-export default function App() {
-  return <h1>Hello World</h1>;
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect
+} from 'react-router-dom';
+
+class App extends Component {
+  render() {
+
+    return (
+      <>
+
+        <Router>
+
+          <Header />
+
+          <Switch>
+
+            <Redirect to="/" />
+
+          </Switch>
+        </Router>
+      </>
+    );
+  }
+
+
 }
+
+export default App;
