@@ -40,7 +40,7 @@ const NpcDetail = () => {
       <p>Description: {details.description}</p>
 
       <form onSubmit={handleSubmit}>
-        New Npc: <input placeholder={details.npc} onChange={((e) => setNpc(e.target.value))} value={npc}></input>
+        Update Npc: <input placeholder={details.npc} onChange={((e) => setNpc(e.target.value))} value={npc}></input>
         <button>Submit</button>
       </form>
     </section>
