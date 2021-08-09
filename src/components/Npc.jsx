@@ -19,16 +19,16 @@ const Npc = ({ id, name, strength, constitution, dexterity, intelligence, wisdom
 };
 
 Npc.propTypes = {
-  id: PropTypes.func,
+  id: PropTypes.string,
   name: PropTypes.string,
-  strength: PropTypes.string,
-  constitution: PropTypes.string,
-  dexterity: PropTypes.func,
-  intelligence: PropTypes.func,
-  wisdom: PropTypes.func,
-  charisma: PropTypes.func,
-  race: PropTypes.func,
-  description: PropTypes.func
+  strength: PropTypes.number,
+  constitution: PropTypes.number,
+  dexterity: PropTypes.number,
+  intelligence: PropTypes.number,
+  wisdom: PropTypes.number,
+  charisma: PropTypes.number,
+  race: PropTypes.string,
+  description: PropTypes.string
 
 };
 

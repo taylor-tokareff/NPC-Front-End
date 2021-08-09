@@ -59,7 +59,7 @@ const NpcDetail = () => {
 
 
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} placeholder={details.npc} onChange={((e) => setNpc(e.target.value))} value={npc}>
         <input placeholder="Name" onChange={((e) => setName(e.target.value))} value={name}></input>
 
         <input placeholder="Strength" onChange={((e) => setStrength(e.target.value))} value={strength}></input>
@@ -77,8 +77,8 @@ const NpcDetail = () => {
         <input placeholder="Race" onChange={((e) => setRace(e.target.value))} value={race}></input>
 
         <input placeholder="Description" onChange={((e) => setDescription(e.target.value))} value={description}></input>
-        Update Npc: <input placeholder={details.npc} onChange={((e) => setNpc(e.target.value))} value={npc}></input>
-        <button>Submit</button>
+
+        <button>Update</button>
       </form>
     </section>
   );
