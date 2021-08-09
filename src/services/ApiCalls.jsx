@@ -1,13 +1,14 @@
 /* eslint-disable max-len */
-export const fetchAllNpc = async (page) => {
+export const fetchAllNpc = async () => {
   const res = await fetch('https://murmuring-woodland-74383.herokuapp.com/api/v1/npcs');
   const json = await res.json();
-  return json.slice((page - 1) * 3, page * 3);
+  return json;
 };
 
 export const fetchOneNpc = async (id) => {
-  const res = await fetch(`https://murmuring-woodland-74383.herokuapp.com/api/v1/npcs${id}`);
+  const res = await fetch(`https://murmuring-woodland-74383.herokuapp.com/api/v1/npcs/${id}`);
   const json = await res.json();
+  console.log(json);
   return json;
 };
 
@@ -22,13 +23,13 @@ export const makeNpc = async (body) => {
 };
 
 export const deleteNpc = async (id) => {
-  await fetch(`https://murmuring-woodland-74383.herokuapp.com/api/v1/npcs${id}`, {
+  await fetch(`https://murmuring-woodland-74383.herokuapp.com/api/v1/npcs/${id}`, {
     method: 'DELETE'
   });
 };
 
-export const updateNpc = async (obj) => {  //params!!!
-  await fetch(`https://murmuring-woodland-74383.herokuapp.com/api/v1/npcs${obj.id}`, {
+export const updateNpc = async (obj) => {
+  await fetch(`https://murmuring-woodland-74383.herokuapp.com/api/v1/npcs/${obj.id}`, {
     method: 'PUT',
     headers: {
       'Content-type': 'application/json; charset=UTF-8'
