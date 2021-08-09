@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
-export const fetchAllNpc = async (page) => {
+export const fetchAllNpc = async () => {
   const res = await fetch('https://murmuring-woodland-74383.herokuapp.com/api/v1/npcs');
   const json = await res.json();
-  return json.slice((page - 1) * 3, page * 3);
+  return json;
 };
 
 export const fetchOneNpc = async (id) => {
