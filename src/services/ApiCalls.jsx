@@ -8,7 +8,6 @@ export const fetchAllNpc = async () => {
 export const fetchOneNpc = async (id) => {
   const res = await fetch(`https://murmuring-woodland-74383.herokuapp.com/api/v1/npcs/${id}`);
   const json = await res.json();
-  console.log(json);
   return json;
 };
 
