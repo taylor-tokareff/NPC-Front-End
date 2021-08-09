@@ -30,14 +30,14 @@ const NpcDetail = () => {
   return (
     <section>
       <p>Name: {details.name}</p>
-      <p>Strength: {details.currentStrength}</p>
-      <p>Constitution: {details.Constitution}</p>
-      <p>Dexterity: {details.Dexterity}</p>
-      <p>Intelligence: {details.Intelligence}</p>
-      <p>Wisdom: {details.Wisdom}</p>
-      <p>Charisma: {details.Charisma}</p>
-      <p>Race: {details.Race}</p>
-      <p>Description: {details.Description}</p>
+      <p>Strength: {details.strength}</p>
+      <p>Constitution: {details.constitution}</p>
+      <p>Dexterity: {details.dexterity}</p>
+      <p>Intelligence: {details.intelligence}</p>
+      <p>Wisdom: {details.wisdom}</p>
+      <p>Charisma: {details.charisma}</p>
+      <p>Race: {details.race}</p>
+      <p>Description: {details.description}</p>
 
       <form onSubmit={handleSubmit}>
         New Npc: <input placeholder={details.npc} onChange={((e) => setNpc(e.target.value))} value={npc}></input>

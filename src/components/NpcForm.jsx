@@ -29,15 +29,25 @@ const NpcForm = () => {
 
   return <form onSubmit={handleSubmit}>
     <input placeholder="Name" onChange={((e) => setName(e.target.value))} value={name}></input>
+
     <input placeholder="Strength" onChange={((e) => setStrength(e.target.value))} value={strength}></input>
+
     <input placeholder="Constitution" onChange={((e) => setConstitution(e.target.value))} value={constitution}></input>
+
     <input placeholder="Dexterity" onChange={((e) => setDexterity(e.target.value))} value={dexterity}></input>
+
     <input placeholder="Intelligence" onChange={((e) => setIntelligence(e.target.value))} value={intelligence}></input>
+
     <input placeholder="Wisdom" onChange={((e) => setWisdom(e.target.value))} value={wisdom}></input>
+
     <input placeholder="Charisma" onChange={((e) => setCharisma(e.target.value))} value={charisma}></input>
+
     <input placeholder="Race" onChange={((e) => setRace(e.target.value))} value={race}></input>
+
     <input placeholder="Description" onChange={((e) => setDescription(e.target.value))} value={description}></input>
+
     <button>Submit</button>
+
   </form>;
 };
 
